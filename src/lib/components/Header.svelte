@@ -11,6 +11,12 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
+      <nav class="hidden lg:flex space-x-4">
+        <a href="/" class="py-2">Home</a>
+        <a href="/products" class="py-2">Products</a>
+        <a href="/cart" class="py-2">Cart</a>
+        <a href="/orders" class="py-2">Orders</a>
+      </nav>
     </div>
   
     <!-- Mobile Menu -->

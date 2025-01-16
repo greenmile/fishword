@@ -2,6 +2,7 @@
     import { onMount } from 'svelte';
     import pb from '$lib/pocketbase';
     import Header from '$lib/components/Header.svelte';
+    import { goto } from '$app/navigation';
   
     let products = [];
     let isLoading = true;
@@ -43,6 +44,10 @@
   localStorage.setItem('cart', JSON.stringify(cart));
   alert(`${product.name} added to cart!`);
 }
+
+function proceedToCart() {
+  goto('/cart');
+}
   </script>
   
   <Header />
@@ -69,11 +74,15 @@
             >
               Add to Cart
             </button>
-            <div class="bg-blue-500 text-white p-4">
-              Test Tailwind CSS
-            </div>
+           
           </div>
         {/each}
       </div>
     {/if}
+    <button
+      on:click={proceedToCart}
+      class="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
+    >
+      Proceed to Cart
+    </button>
   </main>
