@@ -1,8 +1,8 @@
 <script>
     let isOpen = false; // For mobile menu toggle
-  </script>
+</script>
   
-  <header class="bg-white shadow">
+<header class="bg-white shadow">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
       <h1 class="text-2xl font-bold text-blue-600">🐟 Fishworld</h1>
       <button on:click={() => (isOpen = !isOpen)} class="lg:hidden">
@@ -15,7 +15,6 @@
         <a href="/" class="py-2">Home</a>
         <a href="/products" class="py-2">Products</a>
         <a href="/cart" class="py-2">Cart</a>
-        <a href="/orders" class="py-2">Orders</a>
       </nav>
     </div>
   
@@ -25,7 +24,6 @@
         <a href="/" class="block py-2">Home</a>
         <a href="/products" class="block py-2">Products</a>
         <a href="/cart" class="block py-2">Cart</a>
-        <a href="/orders" class="block py-2">Orders</a>
       </div>
     {/if}
-  </header>
+</header>
